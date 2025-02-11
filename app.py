@@ -1,6 +1,12 @@
+from flask import Flask
 
-def main():
-    print("hello")
+app = Flask(__name__)
 
-if __name__ == "__main__":
-    main()
+
+@app.route('/')
+def hello_world():
+  return 'Hello, World!'
+
+
+if __name__ == 'main':
+  app.run(debug=True)
