@@ -11,15 +11,20 @@
 </head>
 <body class="bg-slate-950">
   {% include 'nav.html'%}
-  <div class="container mx-auto px-4 py-8 mt-12">
-    <h1 class="text-4xl font-bold text-blue-600 text-center font-sans">Career Cracker</h1>
-    <img src = "https://6a082b66-a9dd-416a-9836-c6bf9a926a2e-00-3lcb996nfk1t3.pike.replit.dev/static/banner.jpg" class="w-full h-48 mt-5 object-fit" >"
+  
+  <img src = "https://6a082b66-a9dd-416a-9836-c6bf9a926a2e-00-3lcb996nfk1t3.pike.replit.dev/static/banner.jpg" class="w-full h-48 mt-10 object-fit" >
+  <div class="container mx-auto px-4  mt-12">
+    <h1 class="text-4xl font-bold text-blue-600 text-center font-sans mb-8">Career Cracker</h1>
+    
 
-    <h2 class="text-2xl font-bold text-white text-center font-sans">About Career Cracker</h2>
+    
+    <h2 class="text-2xl font-bold text-white text-center font-sans mb-4">About Career Cracker</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center ">
     <p1 class="text-white text-center font-sans mt-10">
-    Career Cracker is a website designed to help you find your dream job. We offer a wide range of resources to help you with your job search, including job postings, career advice, and resume writing tips. Our goal is to make the job search process as easy and stress-free as possible for you.
+      <b>Career Cracker</b> is a dedicated online platform designed specifically to assist you in your quest to find your dream job. We understand that the job search process can often feel overwhelming and stressful, which is why we have curated a comprehensive suite of resources tailored to meet your needs. Our mission is to empower job seekers like you with the tools and knowledge necessary to navigate the complexities of the job market with confidence and ease.
     </p1>
-
+    <img src="/static/work.jpg" class="h-48 w-48 object-cover object-center rounded-full mx-4 " >
+    </div>
     <h2 class="text-2xl font-bold text-white text-center font-sans mt-10">Open Positions</h2>
    <div>
 
@@ -29,12 +34,20 @@
      
    </div>
     
-    <div class="flex justify-center mt-4">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300">Contact us</button>
+    <div class="flex justify-center mt-10 mb-10">
+      <a href="mailto:patelvinnu.112@gmail.com?subject=Question%20about%20Job%20openings&body=My%20name%3A%20%3CYour%20name%3E%0D%0A%0D%0AMy%20Question%3A%20%3CEnter%20your%20question%20here%3E%0D%0A" type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300">Contact us</a>
     </div>
 
-    
+    <h2 class="text-2xl font-bold text-white text-center font-sans ">Our Mission</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center mb-8">
+    <p1 class="text-white text-center font-sans mt-5">
+      
+      At Career Cracker, our mission is to make the job search process as easy and stress-free as possible for you. We are committed to providing you with the tools, resources, and support you need to navigate the complexities of the job market. Whether you're a recent graduate, a seasoned professional, or someone looking to make a career change, we are here to help you succeed.
+    </p1>
    
   </div>
+  </div>
+
+  {% include 'footer.html' %}
 </body>
 </html>
