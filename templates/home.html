@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Career Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -18,7 +19,14 @@
     </p1>
 
     <h2 class="text-2xl font-bold text-white text-center font-sans mt-10">Open Positions</h2>
-    <p class="text-white text-center font-sans mt-10"">TODO - Show the jobs here</p>
+   <div>
+
+     {% for job in jobs %}
+      {% include 'jobitem.html' %}
+     {% endfor %}
+     
+   </div>
+    
     <div class="flex justify-center mt-4">
       <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ease-in-out duration-300">Contact us</button>
     </div>

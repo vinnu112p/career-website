@@ -1,0 +1,15 @@
+<div class = "text-white  font-sans mt-8 border-b-2 border-blue-300 py-2 flex justify-between items-center" > 
+  <div >
+   <h4 class="text-2xl mb-4"> {{job['title']}} </h4>
+   <div>
+     <b>Location:</b> {{job['location']}}
+   </div>
+   {% if 'salary' in job %}
+   <div>
+     <b>Salary:</b> {{job['salary']}}
+    
+   </div>
+   {% endif %}
+  </div>
+  <button class="bg-transparent hover:bg-blue-700 text-white font-bold  rounded ease-in-out duration-300 mt-4 py-2 px-4 border border-blue-400"">Apply</button>
+ </div>
